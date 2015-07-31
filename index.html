@@ -1,0 +1,117 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Pacifico">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Dancing Script">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Questrial">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Just Another Hand">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" media="all">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>交大產業加速器中心</title>
+</head>
+<body>
+	
+	<header>
+		<h1 class="name animated lightSpeedIn">IAPS</h1>
+		<h2 class="note animated fadeIn">We're Here To Help</h2>
+	</header>
+	<nav>
+		<ul id="first-page-nav">
+			<li><a href="#" class="hvr-float">遠景</a></li>
+			<li><a href="#" class="hvr-float">加速服務</a></li>
+			<li><a href="#" class="hvr-float">活動訊息</a></li>
+			<li><a href="#" class="hvr-float">策略合作夥伴</a></li>
+			<li><a href="#" class="hvr-float">業師介紹</a></li>
+			<li><a href="#" class="hvr-float">進駐介紹</a></li>
+			<li><a href="#" class="hvr-float">電子報</a></li>
+			<li><a href="#" class="hvr-float">About us</a></li>
+		</ul>
+	</nav>
+
+		
+	
+
+		<div id="what-we-do-wrapper">
+			<iframe id="youtube-video" width="640" height="360" src="https://www.youtube.com/embed/x-vQPiWm_7M?list=PLF0AC77EDE9F6D1C6" frameborder="0" allowfullscreen></iframe>
+			
+			<div class="body-block1">
+				<div class="what-we-do" id="para-1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet dictum sagittis. Etiam mollis semper placerat. Aenean auctor, turpis eget pellentesque bibendum, purus nunc pulvinar risus, ut venenatis erat mi sit amet libero. Phasellus dignissim hendrerit fermentum. Quisque interdum tempus mattis.</p></div>
+				<img src="snow-tiger.jpg" class="snow-tiger-right" class="what-we-do">
+			</div>
+
+			<div class="body-block2">
+				<div class="what-we-do" id="para-2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet dictum sagittis. Etiam mollis semper placerat. Aenean auctor, turpis eget pellentesque bibendum, purus nunc pulvinar risus, ut venenatis erat mi sit amet libero. Phasellus dignissim hendrerit fermentum. Quisque interdum tempus mattis.</p></div>
+				<img src="snow-tiger.jpg" class="snow-tiger-left" class="what-we-do">
+			</div>
+
+			<div class="body-block3">
+				<div class="what-we-do" id="para-3"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet dictum sagittis. Etiam mollis semper placerat. Aenean auctor, turpis eget pellentesque bibendum, purus nunc pulvinar risus, ut venenatis erat mi sit amet libero. Phasellus dignissim hendrerit fermentum. Quisque interdum tempus mattis.</p></div>
+				<img src="snow-tiger.jpg" class="snow-tiger-right" class="what-we-do">
+			</div>
+		</div>
+		<hr id="hr-1">
+
+		<span><h2 id="gallery-title">Lorem Ipsum</h2></span>
+		<div id="bottom-gallery">
+			<div class="bot-picture1"><img src=""></div>
+			<div class="bot-picture2"><img src=""></div>
+			<div class="bot-picture3"><img src=""></div>
+			<div class="bot-picture4"><img src=""></div>
+		</div>
+
+		<div id="button"></div>
+
+		<hr id="hr-2">
+
+		<div id="footer">
+			<a href="https://www.facebook.com/IAPS.NCTU"><img src="Facebook.png"></a>
+			<a href="#"><img src="Google-plus.png"></a>
+			<a href="#"><img src="Linkedin.png"></a>
+			<a href="#"><img src="Twitter.png"></a>
+		</div>
+
+	
+
+	<!-- Entrance Animation -->
+	<script>
+	$(window).scroll(function() {
+		$('.body-block1, .body-block2, .body-block3').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+300) {
+				$(this).addClass("animated fadeIn");
+			}
+		});
+	});
+
+	$(window).scroll(function() {
+		$('#youtube-video').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+550) {
+				$(this).addClass("animated slideInLeft");
+			}
+		});
+	});
+
+	$(window).scroll(function() {
+		$('.bot-picture1, .bot-picture2, .bot-picture3, .bot-picture4').each(function(){
+		var imagePos = $(this).offset().top;
+
+		var topOfWindow = $(window).scrollTop();
+			if (imagePos < topOfWindow+450) {
+				$(this).addClass("animated fadeIn");
+			}
+		});
+	});
+	</script>
+
+</body>
+</html>
