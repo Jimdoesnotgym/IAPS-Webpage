@@ -21,10 +21,10 @@
 <body>
 	
 	<header class="animated fadeIn">
-		<h1 class="name animated lightSpeedIn">IAPS</h1>
-		<h2 class="note animated fadeIn">We're Here To Help</h2>
+		<h1 class="name animated lightSpeedIn"></h1>
+		<h2 class="note animated fadeIn"></h2>
 	</header>
-	<nav>
+	<nav class="animated fadeIn">
 		<ul id="first-page-nav">
 			<a href="#"><img class="top-logo" src="logo.jpg"></a>
 			<li><a href="#" class="hvr-float">遠景</a></li>
@@ -174,7 +174,7 @@
 		var imagePos = $(this).offset().top;
 
 		var topOfWindow = $(window).scrollTop();
-			if (imagePos < topOfWindow+450) {
+			if (imagePos < topOfWindow+650) {
 				$(this).addClass("animated fadeIn");
 			}
 		});
