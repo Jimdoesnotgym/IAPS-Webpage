@@ -1,29 +1,34 @@
-
-html body{
-	margin: 0;
-	padding: 0;
-}
-
 body{
 	font-size: 16px;
 	font-family: Open Sans;
+	margin: 0;
 }
 
 header {
-	background: url(209H.jpg) center center;
-	width: 100%;
-	height: 650px;
+	background: url(210H.jpg) center center;
+	height: 100vh;
 	background-size: cover;
-	text-align: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-justify-content:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
+
 
 .name{
 	font-family: Open Sans;
 	font-weight: 700;
-	text-align: center;
 	color: white;
 	font-size: 72px;
-	padding-top: 300px;
+	margin: 0;
 }
 
 h1 span{
@@ -32,15 +37,11 @@ h1 span{
 }
 
 nav {
-	animation-delay: 0.5s;
-	width: 100%;
+	-webkit-animation-delay: 0.5s;
+	        animation-delay: 0.5s;	
+	float: right;
 	height: 54px;
-	position: absolute;
-	margin-top: 40px;
-	margin-right: 40px;
-	top: 0px;
-	clear: both;
-	text-align: center;
+	margin-top: 90px;
 }
 
 nav a{
@@ -59,15 +60,11 @@ nav a:hover{
 }
 
 .what-we-do-wrapper {
+	visibility: hidden;
 	margin: 0 auto;
-	position: relative;
 	width: 100%;
-	text-align: center;
-	
   	display: -webkit-flex;
-	
   	display: -ms-flexbox;
-	
   	display: flex;         
   	-webkit-align-items: center;         
   	-ms-flex-align: center;         
@@ -78,9 +75,12 @@ nav a:hover{
 }
 
 .about-us{
+	visibility: hidden;
 	text-align: center;
 	padding-top: 100px;
 	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 50px;
 }
 
 .snow-tiger{
@@ -106,15 +106,22 @@ nav a:hover{
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	margin-bottom: 220px;
 }
 
-span #gallery-title {
+.gallery-title {
+	visibility: hidden;
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 	position: relative;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 
@@ -137,7 +144,7 @@ span.text-content {
   transition: opacity 500ms;
 }
 
-ul.img-list li:hover span.text-content {
+.gallery-wrapper div:hover span.text-content {
   opacity: 1;
 }
 
@@ -229,81 +236,59 @@ span.text-content span {
 	-webkit-filter: blur(3px);  
 }
 
-#footer {
+footer {
 	position: relative;
-	top: 233px;
 	width: 100%;
-	height: 300px;
-	background-color: #060808;
+	height: 330px;
+	background: url(210H.jpg) center center;
+	background-size: cover;
 }
 
-.bot-logo{
-	position: relative;
-	padding: 0;
-	top: 50px;
-	height: 100px;
-	width: auto;
-	left: 70px;
-}
-
-#footer ul li{
-	position: relative;
+footer p{
+	max-width: 300px;
+	float: left;
 	color: white;
-	margin-top: 5px;
-	padding: 0;
-	left: 280px;
+	clear: left;
+	margin-left: 50px;
 }
 
-.bot-nav-links{
-	position: relative;
-	top: -60px;
+footer h2{
+	float: left;
+	margin-left: 125px;
+	color: white;
+	margin-top: 50px;
+	margin: 50px 0px 0px 125px;
 }
 
-.bot-nav-links ul li{
-	text-decoration: none;
+footer li{
+	color: white;
 	list-style: none;
-}
-
-#footer img {
-	position: relative;
-	margin-right: 30px;
-}
-
-.social-media-links{
-	position: relative;
-	padding: 0;
-	left: 1050px;
-	bottom: 420px;
 }
 
 .address1{
-	position: relative;
-	left: 280px;
-	bottom: 280px;
-	padding: 0;
-}
-
-.address1 ul li{
-	list-style: none;
+	position: absolute;
+	margin-left: 600px;
+	margin-top: 190px;
 }
 
 .address2{
-	position: relative;
-	left: 280px;
-	bottom: 240px;
-	padding: 0;
+	position: absolute;
+	margin-left: 600px;
+	margin-top: 90px;
 }
 
-.address2 ul li{
-	list-style: none;
+.social-media-links{
+	float: right;
+	clear: right;
+	margin-right: 100px;
+	margin-top: 20px;
 }
 
 .copyright{
-	position: relative;
-	color: white;
-	padding: 0;
-	left: 1150px;
-	bottom: 380px;
+	float: right;
+	clear: right;
+	margin-top: 50px;
+	margin-right: 100px;
 }
 
 
