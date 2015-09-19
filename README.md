@@ -1,1 +1,1 @@
-First commit of website made for www.iaps.nctu.edu.tw
+First commit with git shell of website made for http://iaps.nctu.edu.tw/
