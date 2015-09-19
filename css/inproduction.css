@@ -1,0 +1,22 @@
+.main{
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	height: 500px;
+	width: 100%;
+}
+
+h1{
+	text-align: center;
+    margin-bottom: 40px;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,cursive;
+    font-weight: 700;
+    color: #20142C;
+}
+
+img{
+	width: 500px;
+}
